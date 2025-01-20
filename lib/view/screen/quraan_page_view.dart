@@ -15,7 +15,7 @@ class QuranPageView extends StatefulWidget {
 }
 
 class _QuranPageViewState extends State<QuranPageView> {
-  double _fontSize = 26.0;
+  double fontSize = 26.0;
 
   @override
   Widget build(BuildContext context) {
@@ -115,7 +115,7 @@ class _QuranPageViewState extends State<QuranPageView> {
                                     child: Text(
                                       'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
                                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                        fontSize: _fontSize + 4,
+                                        fontSize: fontSize + 4,
                                         height: 1.6,
                                         color: Colors.white,
                                         shadows: [
@@ -142,7 +142,7 @@ class _QuranPageViewState extends State<QuranPageView> {
                               child: Text(
                                 surah.displayqoran,
                                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                  fontSize: _fontSize,
+                                  fontSize: fontSize,
                                   height: 2.2,
                                 ),
                                 textAlign: TextAlign.justify,
@@ -164,8 +164,8 @@ class _QuranPageViewState extends State<QuranPageView> {
                         heroTag: 'decrease',
                         onPressed: () {
                           setState(() {
-                            if (_fontSize > 20) {
-                              _fontSize -= 2;
+                            if (fontSize > 20) {
+                              fontSize -= 2;
                             }
                           });
                         },
@@ -177,8 +177,8 @@ class _QuranPageViewState extends State<QuranPageView> {
                         heroTag: 'increase',
                         onPressed: () {
                           setState(() {
-                            if (_fontSize < 40) {
-                              _fontSize += 2;
+                            if (fontSize < 40) {
+                              fontSize += 2;
                             }
                           });
                         },
