@@ -12,7 +12,7 @@ class SurahListScreen extends StatelessWidget {
     return Directionality(
       textDirection: TextDirection.rtl,
       child: Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.background,
+        backgroundColor: Theme.of(context).colorScheme.surface,
         appBar: AppBar(
           title: Column(
             children: [
@@ -114,7 +114,7 @@ class SurahListScreen extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  '${quranList[index].name}',
+                                  quranList[index].name,
                                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
                                     fontSize: 20,
                                   ),
